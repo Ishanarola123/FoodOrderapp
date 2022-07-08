@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewAdd"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_baseline_insert_photo_24" />
+
+    <EditText
+        android:id="@+id/inputImageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewAdd"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="enter Item Name" />
+
+    <EditText
+        android:id="@+id/inputItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputImageName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:hint="enter Price" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewProgress"
+        android:layout_below="@+id/inputItemPrice"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:text="0.0%"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progreesBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_below="@+id/textviewProgress"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="upload"
+        android:id="@+id/Btnupload"
+        android:layout_below="@+id/progreesBar"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        />
+
+
+
+
+</RelativeLayout>
